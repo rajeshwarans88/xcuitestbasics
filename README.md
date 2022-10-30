@@ -2,7 +2,8 @@
 Basics of XCTest covering UI Testing using XCUITest and Unit Testing 
 
 ## Getting started
-Build the project in your desired device and run the defined test cases
+Extract the Learning.zip and launch the **Learning.xcodeproj**  
+Build the project in your desired iOS and run the test cases
 Use **Main.storyboard** to add UI elements and leverage them in the UI Tests available in LearningUITests folder
 Use **UnitTests** folder for creating unit test cases for the individual classes
 
