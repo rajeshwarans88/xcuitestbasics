@@ -12,7 +12,6 @@ The UI consists of the following elements
 1. Learning Demo - label
 2. Submit button - Triggers a Welcome alert box
 3. Text field - to accept key board input
-4. Cars button - Triggers an alert box that calculates the distance travelled using a Car object
-5. Harry , Ron , Hermione buttons - Triggers an action sheet displaying magic xp of each Hogwarts object
-
+4. Harry , Ron , Hermione buttons - Triggers an action sheet displaying magic xp of each Hogwarts object
+5. Swipe right and left for additional screens with additional buttons
 ![img.png](img.png)
