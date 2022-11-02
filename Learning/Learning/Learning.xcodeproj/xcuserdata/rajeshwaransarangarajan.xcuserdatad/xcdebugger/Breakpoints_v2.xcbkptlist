@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "AE909928-1060-422C-BAB8-0CD44DD21780"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "674719A6-0A46-465E-8E82-15614ECA5D65"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LearningUITests/LearningUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "test_FindAllButtonsUsingChildrenAndDescendants()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "674719A6-0A46-465E-8E82-15614ECA5D65 - 9e3597ca448aa5c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LearningUITests.LearningUITests.test_FindAllButtonsUsingChildrenAndDescendants() -&gt; ()"
+                  moduleName = "LearningUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajeshwaransarangarajan/Downloads/Studies/Swift/Learning/Learning/LearningUITests/LearningUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "1001">
+               </Location>
+               <Location
+                  uuid = "674719A6-0A46-465E-8E82-15614ECA5D65 - 9e3597ca448aa5c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LearningUITests.LearningUITests.test_FindAllButtonsUsingChildrenAndDescendants() -&gt; ()"
+                  moduleName = "LearningUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajeshwaransarangarajan/Downloads/Studies/Swift/Learning/Learning/LearningUITests/LearningUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "1002">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
