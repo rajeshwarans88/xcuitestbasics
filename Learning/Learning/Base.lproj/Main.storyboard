@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Car View Controller-->
+        <scene sceneID="IIZ-7E-DPU">
+            <objects>
+                <viewController id="vVZ-Se-BbV" customClass="CarViewController" customModule="Learning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y0q-tB-wsI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vCH-Fg-gke">
+                                <rect key="frame" x="20" y="202" width="358" height="472"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wo9-tX-IYG">
+                                        <rect key="frame" x="105" y="133" width="153" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="btnFerrari" label="Ferrari"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Ferrari"/>
+                                        <connections>
+                                            <action selector="showCarPopUpsWithSender:" destination="vVZ-Se-BbV" eventType="touchUpInside" id="nAR-3f-nem"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCW-Nz-zvA">
+                                        <rect key="frame" x="103" y="252" width="153" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="btnHonda" label="Honda"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Honda"/>
+                                        <connections>
+                                            <action selector="showCarPopUpsWithSender:" destination="vVZ-Se-BbV" eventType="touchUpInside" id="oIi-fy-gbo"/>
+                                            <action selector="showPopUpsWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NmM-zr-Os3"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cars" translatesAutoresizingMaskIntoConstraints="NO" id="10h-qx-t6v">
+                                        <rect key="frame" x="8" y="8" width="342" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rc5-eo-ScW">
+                                        <rect key="frame" x="103" y="368" width="153" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="btnJeep" label="Jeep"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Jeep"/>
+                                        <connections>
+                                            <action selector="showCarPopUpsWithSender:" destination="vVZ-Se-BbV" eventType="touchUpInside" id="ryl-wh-NOH"/>
+                                            <action selector="showPopUpsWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ffo-3X-Uto"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="02f-Zw-IEv"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="DJL-gu-Cte"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ua-GO-57D">
+                                <rect key="frame" x="183" y="-18" width="92" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="lblLeftScreenText"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pzH-bA-oS7"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y4M-iN-1iB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5L7-e4-7uY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-853.62318840579712" y="51.5625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Learning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="urm-UZ-GbW">
+                                <rect key="frame" x="0.0" y="0.0" width="500" height="1200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aTD-Kn-raH" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="500" height="1200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Learning Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15k-nW-Qu3">
+                                                <rect key="frame" x="128" y="52" width="159" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mcR-OU-c2D">
+                                                <rect key="frame" x="119" y="101" width="177" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="txtDemo"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpc-hu-rhF">
+                                                <rect key="frame" x="119" y="169" width="177" height="59"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="btnDemo" label="Submit"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                                <connections>
+                                                    <action selector="showPopUpsWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P8V-4C-XOa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFr-oP-KwN">
+                                                <rect key="frame" x="115" y="1022" width="185" height="111"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="btnBottom" label="Bottom"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="Bottom"/>
+                                                <connections>
+                                                    <action selector="showPopUpsWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AtP-CH-7cj"/>
+                                                </connections>
+                                            </button>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yds-Mk-S6S">
+                                                <rect key="frame" x="29" y="420" width="358" height="472"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zg8-Gt-696">
+                                                        <rect key="frame" x="105" y="133" width="153" height="85"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="btnHarry" label="Harry"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="gray" title="Harry"/>
+                                                        <connections>
+                                                            <action selector="showPopUpsWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hld-BQ-Vgs"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19Q-sR-ZTu">
+                                                        <rect key="frame" x="103" y="252" width="153" height="85"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="btnRon" label="Ron"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="gray" title="Ron"/>
+                                                        <connections>
+                                                            <action selector="showPopUpsWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YQO-4O-SMk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="crest" translatesAutoresizingMaskIntoConstraints="NO" id="Nap-wu-aC9">
+                                                        <rect key="frame" x="8" y="8" width="342" height="91"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69f-uW-EKh">
+                                                        <rect key="frame" x="103" y="368" width="153" height="85"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="btnHermione" label="Hermione"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="gray" title="Hermione"/>
+                                                        <connections>
+                                                            <action selector="showPopUpsWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vmH-n7-bez"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <viewLayoutGuide key="contentLayoutGuide" id="PE3-Wl-T7u"/>
+                                                <viewLayoutGuide key="frameLayoutGuide" id="eQU-tx-uwe"/>
+                                            </scrollView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1200" id="1uk-np-fKL"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="aTD-Kn-raH" secondAttribute="bottom" id="5hh-3x-lRC"/>
+                                    <constraint firstAttribute="trailing" secondItem="aTD-Kn-raH" secondAttribute="trailing" id="D7Q-9y-qwP"/>
+                                    <constraint firstItem="aTD-Kn-raH" firstAttribute="leading" secondItem="urm-UZ-GbW" secondAttribute="leading" id="az0-fo-kce"/>
+                                    <constraint firstItem="aTD-Kn-raH" firstAttribute="top" secondItem="urm-UZ-GbW" secondAttribute="top" id="lyz-yO-ZZ4"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aTD-Kn-raH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Ap9-Md-kl3"/>
+                            <constraint firstItem="urm-UZ-GbW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HaJ-9i-bnG"/>
+                            <constraint firstAttribute="trailing" secondItem="urm-UZ-GbW" secondAttribute="trailing" id="LwL-2y-ESg"/>
+                            <constraint firstItem="urm-UZ-GbW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qRQ-X7-gro"/>
+                            <constraint firstAttribute="bottom" secondItem="urm-UZ-GbW" secondAttribute="bottom" id="uLA-2H-goa"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="500" height="1200"/>
+                    <connections>
+                        <segue destination="ZiF-he-UKe" kind="show" identifier="swipeRight" id="mrO-Ps-Vmw"/>
+                        <segue destination="vVZ-Se-BbV" kind="show" identifier="swipeLeft" id="YbL-Ud-1QZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="65.625"/>
+        </scene>
+        <!--Marvel View Controller-->
+        <scene sceneID="EiN-A7-Qyy">
+            <objects>
+                <viewController id="ZiF-he-UKe" customClass="MarvelViewController" customModule="Learning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6UX-u6-G5P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7t5-ye-cYe">
+                                <rect key="frame" x="28" y="223" width="358" height="472"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Teo-XO-Tfz">
+                                        <rect key="frame" x="105" y="133" width="153" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="btnIron" label="IronMan"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Iron Man"/>
+                                        <connections>
+                                            <action selector="showCatchPhraseWithSender:" destination="ZiF-he-UKe" eventType="touchUpInside" id="0c4-mJ-yvI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ep5-Nn-6yW">
+                                        <rect key="frame" x="103" y="252" width="153" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="btnThor" label="Thor"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Thor"/>
+                                        <connections>
+                                            <action selector="showCatchPhraseWithSender:" destination="ZiF-he-UKe" eventType="touchUpInside" id="V93-SA-qwS"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="marvel" translatesAutoresizingMaskIntoConstraints="NO" id="9sA-eH-itq">
+                                        <rect key="frame" x="8" y="8" width="342" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ox0-gL-dUU">
+                                        <rect key="frame" x="103" y="368" width="153" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="btnCap" label="CaptainAmerica"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Captain America"/>
+                                        <connections>
+                                            <action selector="showCatchPhraseWithSender:" destination="ZiF-he-UKe" eventType="touchUpInside" id="Q18-wM-R3Y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="FK2-lS-Yod"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="QMG-uc-yPy"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Marvel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pp9-Uq-zYT">
+                                <rect key="frame" x="177" y="-35" width="265" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="lblRightScreenText"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vp5-fH-8an"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Brd-E8-mPy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UxJ-Yd-jbl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1043.4782608695652" y="48.883928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cars" width="2015" height="1133"/>
+        <image name="crest" width="320" height="320"/>
+        <image name="marvel" width="640" height="360"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
